@@ -29,16 +29,16 @@ foundryup
 ```sh
 forge install
 ```
-## 🔧 Usage
-# 1️⃣ Compile the Smart Contract
+# 🔧 Usage
+## 1️⃣ Compile the Smart Contract
 ```sh
 forge build
 ```
-# 2️⃣ Run Tests
+## 2️⃣ Run Tests
 ```sh
 forge test
 ```
-# 3️⃣ Deploy Locally (Anvil)
+## 3️⃣ Deploy Locally (Anvil)
 Start a local Anvil node:
 ```sh
 anvil  
@@ -47,42 +47,42 @@ Deploy using Foundry:
 ```sh
 forge script script/DeployFundMe.s.sol --broadcast --rpc-url http://localhost:8545
 ```
-# 4️⃣ Deploy to Sepolia Testnet
+## 4️⃣ Deploy to Sepolia Testnet
 ```sh
 forge script script/DeployFundMe.s.sol --rpc-url https://eth-sepolia.g.alchemy.com/v2/YOUR_ALCHEMY_KEY --private-key YOUR_PRIVATE_KEY --broadcast --verify --etherscan-api-key        YOUR_ETHERSCAN_KEY
 ```
 
-## 📜 Smart Contract Overview
+# 📜 Smart Contract Overview
 
-# FundMe.sol
+## FundMe.sol
 - Allows users to fund ETH to the contract.
 - Only the contract owner can withdraw funds.
 - Uses Chainlink Price Feeds for minimum funding logic.
 
-# PriceConverter.sol
+## PriceConverter.sol
 - Library to fetch ETH/USD price from Chainlink Oracles.
 
-# Deployment & Interaction Scripts
+## Deployment & Interaction Scripts
 - DeployFundMe.s.sol → Deploys FundMe contract
 - HelperConfig.s.sol → Manages configuration for different networks
 - Interactions.s.sol → Script for interacting with the contract
 
-# Tests
+## Tests
 - Unit Tests → test/unit/FundMeTest.t.sol
 - Integration Tests → test/integration/FundMeTestIntegration.t.sol
 - Uses Foundry’s forge testing framework
 
-# 📜 License
+## 📜 License
 - This project is open-source and available under the MIT License.
 
-# 👨‍💻 Author
+## 👨‍💻 Author
 - 🐀 tunnelrat07:- https://github.com/tunnelrat07
 🚀 Learning Solidity & smart contracts with Foundry!
 
-# ⭐️ Show Some Love
+## ⭐️ Show Some Love
 - If you find this project helpful, feel free to star ⭐ the repo and follow for more updates! 😊
 
-# This README provides:  
+## This README provides:  
 ✅ Clear **project description**  
 ✅ **Installation & usage** steps  
 ✅ **Deployment instructions**  
