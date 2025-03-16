@@ -77,7 +77,7 @@ contract FundMe {
     }
 
     function withdraw() public onlyOwner {
-        // we wanna set the mapping back to zero when we withdraw our funding
+        // we wanna set the mapping back to zero when we withdraw our funding,
         // iterating throught the s_funders array and setting the amountFunded to zero in the s_addressToAmountFunded mapping
 
         // here the s_funders is a storage varibale and everytime we iterate through the loop we are reading from the storage variable
